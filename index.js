@@ -4,9 +4,7 @@ import axios from "axios";
 const app = express();
 const port = 3000;
 
-app.use(express.static("public")); // تصحيح الاسم هنا
-app.set('view engine', 'ejs');    // تأكد من تحديد محرك القوالب
-
+app.set('view engine', 'ejs');    
 const API_URL = "https://api.adviceslip.com/advice";
 
 app.get('/', async (req, res) => {
